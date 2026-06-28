@@ -1,7 +1,11 @@
-import React from 'react'
+import EntryForm from "../components/EntryForm";
 
 export default function Expenses() {
   return (
-    <div>Expenses</div>
-  )
+    <EntryForm
+      type="expense"
+      title="Expenses"
+      subtitle="Log your spending and keep an eye on your outflows."
+    />
+  );
 }
