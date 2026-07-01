@@ -78,7 +78,7 @@ export default function Charts() {
           </div>
         </div>
 
-        <div className="h-[420px] w-full">
+        <div className="h-105 w-full">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={monthlyData} margin={{ top: 20, right: 20, left: 0, bottom: 20 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />

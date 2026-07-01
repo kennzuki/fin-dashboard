@@ -1,8 +1,7 @@
 import Transactions from "./Transaction";
-import Income from "./Income";
-import Expenses from "./Expenses";
 import Budgets from "./Budgets";
 import Charts from "./Charts";
+import RecentEntries from "../components/RecentEntries";
 
 function Home() {
   return (
@@ -13,20 +12,15 @@ function Home() {
         </p>
         <h2 className="mt-2 text-3xl font-bold text-slate-900">Your finance dashboard</h2>
         <p className="mt-2 max-w-2xl text-sm text-slate-600">
-          A simple homepage layout that brings your transactions, income, expenses,
-          budgets, and charts together in one view.
+          A simple homepage layout that brings your transactions, budgets, and charts together in one view.
         </p>
       </div>
+
+      <RecentEntries />
 
       <div className="grid gap-6 lg:grid-cols-2">
         <section className="rounded-2xl border border-slate-200 p-6 shadow-sm">
           <Transactions />
-        </section>
-        <section className="rounded-2xl border border-slate-200 p-6 shadow-sm">
-          <Income />
-        </section>
-        <section className="rounded-2xl border border-slate-200 p-6 shadow-sm">
-          <Expenses />
         </section>
         <section className="rounded-2xl border border-slate-200 p-6 shadow-sm">
           <Budgets />
